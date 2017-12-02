@@ -7,3 +7,5 @@ spawn_time_list = ds_list_create();
 
 spawn_index = 0;
 side = noone;
+
+s_set_road_side();
