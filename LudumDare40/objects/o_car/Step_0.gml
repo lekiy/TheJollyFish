@@ -13,7 +13,7 @@ is_stopped = false;
 
 if(place_meeting(x+lengthdir_x(8, image_angle), y+lengthdir_y(8, image_angle), o_car)){
 		var lead_car = instance_place(x+lengthdir_x(8, image_angle), y+lengthdir_y(8, image_angle), o_car);
-		if(lead_car.mylane = mylane){
+		if(lead_car.side == side){
 			is_stopped = true;	
 		}
 }
