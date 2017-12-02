@@ -1,10 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 image_speed = 0;
-enum stopsign {
-	go,
-	stop
-}
 
 enum roadside {
 	right = -1,
@@ -12,6 +8,6 @@ enum roadside {
 }
 side = roadside.right;
 stop_obj = noone;
-current_state = stopsign.stop;
+current_state = false;
 flip_rate = room_speed*3;
 alarm[0] = flip_rate;

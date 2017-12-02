@@ -1,2 +1,2 @@
 side = roadside.left;
-current_state = stopsign.stop;
+current_state = false;
