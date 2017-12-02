@@ -7,6 +7,6 @@
 /*}else{
 	draw_self();	
 }
-*/
+
 draw_text(x, y, anim_angle);
 draw_text(x, y+10, anim_dist_traveled);
