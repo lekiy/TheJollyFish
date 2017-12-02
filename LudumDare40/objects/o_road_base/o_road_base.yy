@@ -1,8 +1,8 @@
 {
-    "id": "47973afd-abcf-48dc-a57e-0506b64fe475",
+    "id": "9a0e8fb2-07da-4346-aca8-252b7277cfd2",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_car",
+    "name": "o_road_base",
     "eventList": [
         
     ],
