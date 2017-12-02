@@ -41,7 +41,7 @@ if(place_meeting(x+lengthdir_x(8, image_angle), y+lengthdir_y(8, image_angle), o
 }
 
 //Check for Hazards
-var hazard_check_dist = 12;
+var hazard_check_dist = TILE_SIZE/2;
 
 if(place_meeting(x+lengthdir_x(hazard_check_dist, image_angle), y+lengthdir_y(hazard_check_dist, image_angle), o_hazard)){
 		var hazard = instance_place(x+lengthdir_x(hazard_check_dist, image_angle), y+lengthdir_y(hazard_check_dist, image_angle), o_hazard);
