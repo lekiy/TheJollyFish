@@ -4,3 +4,7 @@
 if (keyboard_check_pressed(vk_space) ) {
 	room_restart()
 }
+
+if (keyboard_check_pressed(vk_enter) ) {
+	room_goto(rm_advanced);
+}
