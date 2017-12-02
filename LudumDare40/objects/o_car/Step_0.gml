@@ -10,3 +10,10 @@ if(!is_stopped){
 
 is_stopped = false;
 //mylane = true;
+
+if(place_meeting(x+lengthdir_x(8, image_angle), y+lengthdir_y(8, image_angle), o_car)){
+		var lead_car = instance_place(x+lengthdir_x(8, image_angle), y+lengthdir_y(8, image_angle), o_car);
+		if(lead_car.mylane = mylane){
+			is_stopped = true;	
+		}
+}
