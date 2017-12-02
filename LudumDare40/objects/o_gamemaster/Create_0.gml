@@ -10,4 +10,4 @@ enum roadside {
 	down
 }
 
-#macro TILE_SIZE 32
+#macro TILE_SIZE 40
