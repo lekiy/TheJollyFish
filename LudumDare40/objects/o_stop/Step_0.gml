@@ -11,3 +11,9 @@ if(current_state){
 		instance_destroy(stop_obj);	
 	}
 }
+
+if (current_state) {
+	image_index = 1;
+} else {
+	image_index = 0;
+}
