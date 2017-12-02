@@ -111,11 +111,35 @@
             }
         },
         {
+            "Key": "75c69e66-1935-4126-9c3c-e129f3b0305e",
+            "Value": {
+                "id": "f4618c56-c32d-415e-a9bc-fe07d4994daf",
+                "resourcePath": "sprites\\s_stop\\s_stop.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "816309e2-7136-4825-b7d0-7be3407218c2",
+            "Value": {
+                "id": "22f0c575-436c-4267-8e02-2cfd6af7a3e3",
+                "resourcePath": "sprites\\bg_panel\\bg_panel.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "835e088c-ffb7-424d-b68a-ca14e7c758b7",
             "Value": {
                 "id": "88440448-f60a-4a7e-9f32-19b5633ca696",
                 "resourcePath": "sprites\\s_switch\\s_switch.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "906dacbd-a5aa-4307-b56c-1aa38bdf229f",
+            "Value": {
+                "id": "06dcb1ba-d1dd-43ac-8c9c-861f334c8b94",
+                "resourcePath": "objects\\o_stop\\o_stop.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -164,6 +188,14 @@
                 "id": "9889a00a-2ae0-43d2-a95a-5116c5354b4a",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "b5b81efe-9ca6-4720-b51a-3db454ad8cb6",
+            "Value": {
+                "id": "a5f866bb-5e9a-4a83-b9c3-700ba01d4703",
+                "resourcePath": "objects\\o_switch\\o_switch.yy",
+                "resourceType": "GMObject"
             }
         },
         {

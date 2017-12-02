@@ -1,8 +1,8 @@
 {
-    "id": "47973afd-abcf-48dc-a57e-0506b64fe475",
+    "id": "906dacbd-a5aa-4307-b56c-1aa38bdf229f",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_car",
+    "name": "o_stop",
     "eventList": [
         
     ],
@@ -22,6 +22,6 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "solid": false,
-    "spriteId": "e187cd9c-b4aa-4759-a94e-5a08de65c961",
+    "spriteId": "75c69e66-1935-4126-9c3c-e129f3b0305e",
     "visible": true
 }
