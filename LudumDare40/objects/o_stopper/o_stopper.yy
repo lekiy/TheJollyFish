@@ -1,19 +1,10 @@
 {
-    "id": "9a0e8fb2-07da-4346-aca8-252b7277cfd2",
+    "id": "6070eb4d-7d2b-4d2e-af5d-985005b4aa58",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_road_base",
+    "name": "o_stopper",
     "eventList": [
-        {
-            "id": "f5f32a3d-5e22-4a6a-b39a-e6d65dfa978c",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "9a0e8fb2-07da-4346-aca8-252b7277cfd2"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
@@ -31,6 +22,6 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "solid": false,
-    "spriteId": "574762ce-4afb-46d8-be8e-123245c7f864",
+    "spriteId": "52ae8e93-c80a-4d06-b7ae-290f738e0443",
     "visible": true
 }
