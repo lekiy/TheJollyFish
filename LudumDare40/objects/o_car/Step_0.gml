@@ -6,17 +6,17 @@ image_angle = 0;
 {
 switch (side)
 	{
-	// case "right":
-		// default 0 is good, we can comment out
-		// break;
+	case roadside.right: //Moving up
+		image_angle = 90;
+		break;
 	case roadside.down:
-		image_angle = 270;
+		image_angle = 0; //Moving right
 		break;
 	case roadside.left:
-		image_angle = 180;
+		image_angle = 270; //moving down
 		break;
 	case roadside.up:
-		image_angle = 90;
+		image_angle = 180; //moving left
 		break;
 	}
 }

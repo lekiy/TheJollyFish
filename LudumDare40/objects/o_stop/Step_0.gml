@@ -4,7 +4,7 @@ if(!current_state){
 	if(!instance_exists(stop_obj)){
 		var stopper_x = x;
 		var stopper_y = y;
-		{
+		/*{
 		switch (side)
 		   {
 		   case roadside.up:
@@ -20,7 +20,7 @@ if(!current_state){
 		      stopper_y += 8;
 		      break;
 		   }
-		}
+		}*/
 
 		stop_obj = instance_create_layer(stopper_x, stopper_y, "Instances", o_stopper);	
 		stop_obj.side = side;

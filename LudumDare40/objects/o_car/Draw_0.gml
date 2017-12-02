@@ -3,7 +3,7 @@
 
 
 //if(!mylane){
-	draw_sprite_ext(sprite_index, image_index, x-lengthdir_x(anim_dist_traveled, image_angle-90), y, 1, 1, image_angle+anim_angle, c_white, 1);
+	draw_sprite_ext(sprite_index, image_index, x-lengthdir_x(anim_dist_traveled, image_angle-90), y-lengthdir_y(anim_dist_traveled, image_angle-90), 1, 1, image_angle+anim_angle, c_white, 1);
 /*}else{
 	draw_self();	
 }

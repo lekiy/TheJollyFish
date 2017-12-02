@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 image_speed = 0;
-
+depth = 1;
 side = noone;
 stop_obj = noone;
 current_state = false;
