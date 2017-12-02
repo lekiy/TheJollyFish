@@ -13,3 +13,6 @@ anim_end_y = -1;
 
 anim_dist_traveled = 0;
 anim_angle = 0;
+
+s_set_road_side()
+

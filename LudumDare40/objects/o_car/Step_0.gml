@@ -1,6 +1,25 @@
 /// @description Insert description here
 // You can write your code in this editor
-image_angle = 90*-side;
+
+
+image_angle = 0;
+{
+switch (side)
+	{
+	// case "right":
+		// default 0 is good, we can comment out
+		// break;
+	case roadside.down:
+		image_angle = 270;
+		break;
+	case roadside.left:
+		image_angle = 180;
+		break;
+	case roadside.up:
+		image_angle = 90;
+		break;
+	}
+}
 
 direction = image_angle
 
