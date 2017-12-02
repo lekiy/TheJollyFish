@@ -1,3 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-mylane = false;
+
+if (other.side == side) {
+	mylane = false;
+}

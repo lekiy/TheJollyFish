@@ -3,6 +3,7 @@
 if(!current_state){
 	if(!instance_exists(stop_obj)){
 		stop_obj = instance_create_layer(x + side*8, y, "Instances", o_stopper);	
+		stop_obj.side = side;
 	}
 }
 
