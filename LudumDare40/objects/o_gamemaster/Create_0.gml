@@ -8,5 +8,3 @@ with(cp){
 }
 
 array_list = ds_list_create();
-
-instance_create_depth()
