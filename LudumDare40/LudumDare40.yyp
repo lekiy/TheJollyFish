@@ -438,6 +438,25 @@
             }
         },
         {
+            "Key": "a20763b4-6708-47ad-b7e8-37e859b07cc6",
+            "Value": {
+                "id": "db08c79a-9a48-464b-baec-1b3b6257b09a",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "rooms\/rm_level_2\/rm_level_2.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "a575dbf6-6b43-42a8-b684-2d27e4cd8729",
             "Value": {
                 "id": "85511eb9-e4d3-458a-b9f6-132ae47231c7",
@@ -609,6 +628,25 @@
             }
         },
         {
+            "Key": "c7bc8d9b-5b96-4bd9-ba4a-ffc712e6909b",
+            "Value": {
+                "id": "24ce54e7-6bea-46a1-afbf-72fabf3098fd",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/rm_switch\/rm_switch.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c89d6145-797a-44d0-85e0-e9303bb8a723",
             "Value": {
                 "id": "2f29cbc0-c37d-4bff-87bf-8aed1ae97931",
@@ -662,6 +700,25 @@
                     "default"
                 ],
                 "resourcePath": "objects\/o_gamemaster\/o_gamemaster.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "decc457c-7f21-4ab0-ac7c-8a99f90b27b9",
+            "Value": {
+                "id": "bce68da9-7151-4007-85a5-48861aafa63a",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/o_room_switcher\/o_room_switcher.yy",
                 "resourceType": "GMObject"
             }
         },

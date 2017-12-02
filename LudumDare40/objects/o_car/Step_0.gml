@@ -17,3 +17,14 @@ if(place_meeting(x+lengthdir_x(8, image_angle), y+lengthdir_y(8, image_angle), o
 			is_stopped = true;	
 		}
 }
+
+if(place_meeting(x+lengthdir_x(8, image_angle), y+lengthdir_y(8, image_angle), o_hazard)){
+		var hazard = instance_place(x+lengthdir_x(8, image_angle), y+lengthdir_y(8, image_angle), o_hazard);
+		if(hazard.side == side){
+			mylane = false;	
+		} else {
+			mylane = true;
+		}
+}  else {
+	mylane = true;
+}
