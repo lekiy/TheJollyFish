@@ -2,5 +2,5 @@
 // You can write your code in this editor
 
 if (other.side == side) {
-	mylane = false;
+	//mylane = false;
 }
