@@ -2,7 +2,7 @@
 // You can write your code in this editor
 depth = 2;
 image_speed = 0;
-enum road_type {
+enum road_style {
 	straight_vertical,
 	straight_horizontal,
 	intersection,
@@ -12,4 +12,11 @@ enum road_type {
 	curved_nw
 }
 
+enum road_type {
+	straight,
+	curved,
+	intersection
+}
+
+current_style = noone;
 current_type = noone;

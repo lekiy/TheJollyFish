@@ -1,12 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
-//if(!mylane){
-	draw_sprite_ext(sprite_index, image_index, x-lengthdir_x(anim_dist_traveled, image_angle-90), y-lengthdir_y(anim_dist_traveled, image_angle-90), 1, 1, image_angle+anim_angle, c_white, 1);
-/*}else{
-	draw_self();	
+if(path_index != -1){
+	draw_path(path_index, x, y, false);
 }
+draw_sprite_ext(sprite_index, image_index, x, y, 1, 1, image_angle, c_white, 1);
 
-draw_text(x, y, anim_angle);
-draw_text(x, y+10, anim_dist_traveled);

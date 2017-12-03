@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
+/*
 image_angle = 0;
 {
 switch (side)
@@ -20,8 +20,14 @@ switch (side)
 		break;
 	}
 }
+*/
 
-direction = image_angle
+if(path_index == -1){
+	get_path();	
+}
+image_angle = direction;
+/*
+direction = image_angle;
 
 if(!is_stopped){
 	speed = move_speed;	
@@ -43,28 +49,56 @@ if(place_meeting(x+lengthdir_x(8, image_angle), y+lengthdir_y(8, image_angle), o
 //Check for Hazards
 var hazard_check_dist = TILE_SIZE/2;
 
+/*var new_road = instance_place(x, y, o_road_base);
+if(new_road != old_road && new_road != noone){
+	if(new_road.current_type == road_type.curved){
+		turning = true;
+		old_road = new_road;
+	}
+
+}
+
+if(turning){		
+	switch(direction/90){
+		case 1: 
+			if(y < new_road.y){
+				side = roadside.up;
+				y = new_road.y-TILE_SIZE/4;
+				x = new_road.x-TILE_SIZE/4;
+				turning = false;
+			}
+		case 2: 
+			if(x < new_road.x){
+				side = roadside.left;
+				y = new_road.y+TILE_SIZE/4;
+				x = new_road.x-TILE_SIZE/4;
+				turning = false;
+			}
+		break;	
+	}		
+}else*
 if(place_meeting(x+lengthdir_x(hazard_check_dist, image_angle), y+lengthdir_y(hazard_check_dist, image_angle), o_hazard)){
 		var hazard = instance_place(x+lengthdir_x(hazard_check_dist, image_angle), y+lengthdir_y(hazard_check_dist, image_angle), o_hazard);
 		if(hazard.side == side){
 			mylane = false;
-			/*if(anim_start_x == -1){
-				anim_start_x = x;
-				anim_start_y = y;
-			}*/
-			anim_dist_traveled += move_speed/2;
-			anim_dist_traveled = min(anim_dist_traveled, 16);
-			anim_angle = sin(degtorad((180/16)*anim_dist_traveled))*45;
+			anim_dist_traveled += speed/2;
+			anim_dist_traveled = min(anim_dist_traveled, TILE_SIZE/2);
+			anim_angle = sin(degtorad((180/TILE_SIZE/2)*anim_dist_traveled))*45;
 		} else {
 			mylane = true;
 		}
-}  else {
+}else{
 	mylane = true;
 	if(anim_dist_traveled > 0){
-		anim_dist_traveled -= move_speed/2;
+		anim_dist_traveled -= speed/2;
 		anim_dist_traveled = max(anim_dist_traveled, 0);
-		anim_angle = sin(degtorad((180/16)*anim_dist_traveled))*-45;
+		anim_angle = sin(degtorad((180/TILE_SIZE/2)*anim_dist_traveled))*-45;
 	}
 }
+
+//Check for turn
+
+
 
 /*if(anim_dist_traveled > 0){
 	//anim_dist_traveled = min(point_distance(x, y, anim_start_x, anim_start_y)/2, 16);

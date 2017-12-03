@@ -14,5 +14,11 @@ anim_end_y = -1;
 anim_dist_traveled = 0;
 anim_angle = 0;
 
+target = noone;
+path = noone;
+
+turning = false;
+old_road = noone;
+
 s_set_road_side()
 
