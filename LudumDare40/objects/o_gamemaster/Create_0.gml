@@ -16,3 +16,6 @@ enum roadside {
 }
 
 #macro TILE_SIZE 40
+
+
+display_set_gui_size(480, 360);
