@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(!point_in_rectangle(x, y, -100, -100, room_width+100, room_height+100)){
+if(!point_in_rectangle(x, y, -TILE_SIZE, -TILE_SIZE, room_width+TILE_SIZE, room_height+TILE_SIZE)){
 	instance_destroy();
 }
 

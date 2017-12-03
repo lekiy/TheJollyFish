@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "4e4de901-1de9-4c05-af1e-c9b18103c23e",
+            "Value": {
+                "id": "0524f890-dcd9-4627-9d91-9428e3889712",
+                "resourcePath": "objects\\o_button_exit\\o_button_exit.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "52ae8e93-c80a-4d06-b7ae-290f738e0443",
             "Value": {
                 "id": "9d96efe0-619f-4f27-8a36-e972c859dd45",
@@ -359,6 +367,14 @@
             }
         },
         {
+            "Key": "a9ed173b-b6a4-4450-84bd-f0dd95d7fae8",
+            "Value": {
+                "id": "dc0fc177-d24d-4d19-8848-c57474032eb0",
+                "resourcePath": "objects\\o_camera\\o_camera.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a9ef10b4-435f-4710-9810-8c9003c5f8bb",
             "Value": {
                 "id": "a0786836-060d-4389-9b6f-5f51775c4dad",
@@ -442,7 +458,7 @@
             "Key": "c77946f6-a802-4c69-987f-928239183fea",
             "Value": {
                 "id": "06ee09ed-7f80-422b-aefa-2f6ad0664a2b",
-                "resourcePath": "objects\\o_menu_button\\o_menu_button.yy",
+                "resourcePath": "objects\\o_button_start\\o_button_start.yy",
                 "resourceType": "GMObject"
             }
         },
