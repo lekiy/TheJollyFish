@@ -7,7 +7,7 @@ var gui_modi_x = display_get_gui_width()/view_wport[0];
 var gui_modi_y = display_get_gui_height()/view_hport[0];
 
 if(mouse_check_button_pressed(mb_left)){
-	if(point_in_rectangle((mouse_x+xx)*gui_modi_x, (mouse_y+yy)*gui_modi_y, xx+x, yy+y, xx+x+sprite_width, yy+y+sprite_height)){
+	if(point_in_rectangle(mouse_x*gui_modi_x, mouse_y*gui_modi_y, x, y, x+sprite_width, y+sprite_height)){
 		event_user(0);	
 	}
 }

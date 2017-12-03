@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "48a58817-64c3-4a74-9727-6bf21701fa44",
+            "Value": {
+                "id": "80016c2b-4bac-477d-8597-ba5794be3f59",
+                "resourcePath": "sprites\\s_button_exit\\s_button_exit.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4e4de901-1de9-4c05-af1e-c9b18103c23e",
             "Value": {
                 "id": "0524f890-dcd9-4627-9d91-9428e3889712",
