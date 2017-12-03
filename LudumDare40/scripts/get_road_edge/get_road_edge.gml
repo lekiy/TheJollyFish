@@ -18,7 +18,7 @@ var yy = road.y;
 
 switch(edge){
 	case right: return xx+TILE_SIZE*modi;
-	case top:	 return yy-TILE_SIZE*modi;
+	case top:	return yy-TILE_SIZE*modi;
 	case left:  return xx-TILE_SIZE*modi;
 	case down:  return yy+TILE_SIZE*modi;
 }
