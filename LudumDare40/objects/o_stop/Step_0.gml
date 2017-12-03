@@ -43,12 +43,14 @@ if(current_state){
 	}
 }
 
+/*
 switch(side) {
 	case roadside.rleft:
 		image_index = (current_state) ? 1 : 0; break;
 	case roadside.rright:
 		image_index = (current_state) ? 3 : 2; break;
 }
+*/
 
 /*
 
