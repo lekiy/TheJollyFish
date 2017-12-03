@@ -12,6 +12,7 @@ instance_create_layer(0, 0, "Instances", o_camera);
 
 instance_create_layer(width/2, h_offset, "Instances", o_title);
 h_offset+=sprite_get_height(s_title);
+i+=2;
 instance_create_layer(width/2, h_offset+(h_space)*i++, "Instances", o_button_start);
 //instance_create_layer(width/2, h_offset+(h_space+sprite_get_height(s_button_start))*i++, "Instances", o_button_start);
-instance_create_layer(width/2, h_offset+(h_space+sprite_get_height(s_button_start))*i++, "Instances", o_button_exit);
+instance_create_layer(width/2, h_offset+sprite_get_height(s_button_start)+(h_space)*i++, "Instances", o_button_exit);
