@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 var road = instance_place(x, y, o_road_base);
-var dir = set_direction_from_road(road);
+var dir = get_lane_direction_degrees(road);
 
 if(set_repeat){
 	var spawn = instance_create_layer(x, y, "Instances", o_car);
