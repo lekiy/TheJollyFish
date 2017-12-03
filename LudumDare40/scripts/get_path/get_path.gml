@@ -1,3 +1,5 @@
+///Legacy Code Use: create_path_from_coords ///
+
 var road = instance_place(x, y, o_road_base);
 if(instance_exists(road)){
 	switch(road.current_style){

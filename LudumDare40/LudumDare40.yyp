@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "2674df73-4a49-43f2-b809-dc9135c80af6",
+            "Value": {
+                "id": "81600492-9860-424f-ac14-549d09abd90b",
+                "resourcePath": "rooms\\r_menu\\r_menu.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "271f6d37-07dc-4025-bd44-0bb0179ffe3a",
             "Value": {
                 "id": "a711a5ea-34d6-454c-8ec5-36dbc559831a",
@@ -271,14 +279,6 @@
             }
         },
         {
-            "Key": "97d54206-61da-4dd3-b5bd-a5be882b6c08",
-            "Value": {
-                "id": "d11ff626-7612-44f5-baf0-8105fd397f41",
-                "resourcePath": "rooms\\r_menu\\r_menu.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "9a0e8fb2-07da-4346-aca8-252b7277cfd2",
             "Value": {
                 "id": "ecfdee63-4d77-4b35-b5cf-b61e86b7451a",
@@ -370,7 +370,7 @@
             "Key": "c510b100-e844-417c-9bc9-e32e87037c72",
             "Value": {
                 "id": "ccf1d47f-d9ff-4056-bdb7-18e5f836e652",
-                "resourcePath": "scripts\/script0\/script0.yy",
+                "resourcePath": "scripts\\set_direction_from_road\\set_direction_from_road.yy",
                 "resourceType": "GMScript"
             }
         },

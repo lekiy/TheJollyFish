@@ -11,12 +11,14 @@ enum road_style {
 	curved_ne,
 	curved_nw
 }
+current_style = noone;
 
+//Legacy code use style instead//
 enum road_type {
 	straight,
 	curved,
 	intersection
 }
 
-current_style = noone;
 current_type = noone;
+//-----------------------------//
