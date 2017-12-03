@@ -1,5 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+if (side = noone) {
+	var road = instance_place(x, y, o_road_base);
+	side = get_lane_direction(road);
+}
+
+//var road = instance_place(x, y, o_road_base);
+//side = get_lane_direction(road);
+
+
 if(!current_state){
 	if(!instance_exists(stop_obj)){
 		var stopper_x = x;
