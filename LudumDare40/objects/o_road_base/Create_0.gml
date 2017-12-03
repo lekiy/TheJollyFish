@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-//depth = 2;
+depth = 10;
 image_speed = 0;
 enum road_style {
 	straight_vertical,
