@@ -4,17 +4,17 @@ var road = instance_nearest(x, y, o_road_base);
 //var r_center_y = road.y+TILE_SIZE/2;
 
 if(x > road.x && y < road.y){
-	side = roadside.right;
+	side = roadside.rright;
 }
 if(x < road.x && y > road.y){
-	side = roadside.left;
+	side = roadside.rleft;
 }
 
 if(x > road.x && y > road.y){
-	side = roadside.down;
+	side = roadside.rdown;
 }
 if(x < road.x && y < road.y){
-	side = roadside.up;
+	side = roadside.rup;
 }
 
 /*

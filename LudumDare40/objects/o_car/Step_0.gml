@@ -22,8 +22,9 @@ switch (side)
 }
 */
 
-if(path_index == -1){
-	get_path();	
+if(path == noone){
+	path = create_path_from_coords(x, y, direction);
+	path_start(path, move_speed, path_action_stop, true);
 }
 image_angle = direction;
 /*

@@ -4,10 +4,10 @@ global.collision_count = 0;
 global.level_started = false;
 
 enum roadside {
-	right,
-	left,
-	up,
-	down
+	rright,
+	rleft,
+	rup,
+	rdown
 }
 
 #macro TILE_SIZE 40

@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "07f7c98f-d3f0-4a26-810a-9c35388d4d7d",
+            "Value": {
+                "id": "f4916580-6059-4058-922b-a38061b61246",
+                "resourcePath": "scripts\\get_road_edge\\get_road_edge.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "109e82a5-8578-4e7f-ad17-6eb7cf9e5fc2",
             "Value": {
                 "id": "9fc1bd88-2b0a-4101-a9fb-285bc82ca91a",
@@ -111,6 +119,14 @@
             }
         },
         {
+            "Key": "4262805f-91dd-481d-a660-62f27c710753",
+            "Value": {
+                "id": "487c9cee-efd9-43dd-a168-8bc5edce73ab",
+                "resourcePath": "scripts\\path_add_point_from_edges\\path_add_point_from_edges.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "42f930e1-783b-4ca3-b08a-5535ac0e6eb9",
             "Value": {
                 "id": "32f663e1-4936-49bc-9964-f3c423902018",
@@ -132,6 +148,14 @@
                 "id": "9d96efe0-619f-4f27-8a36-e972c859dd45",
                 "resourcePath": "sprites\/m_stop\/m_stop.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "56b8fabf-d1b8-4d7a-a8c0-546cc73eeb9b",
+            "Value": {
+                "id": "aa80bf38-964a-4b3f-a23f-dbb9049a0603",
+                "resourcePath": "scripts\\create_path_from_coords\\create_path_from_coords.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -442,7 +466,10 @@
     "script_order": [
         "c510b100-e844-417c-9bc9-e32e87037c72",
         "8cb127a9-54f6-4f86-a44e-c47345187343",
-        "256e6bca-8471-4831-a99a-6154e5bdc123"
+        "256e6bca-8471-4831-a99a-6154e5bdc123",
+        "56b8fabf-d1b8-4d7a-a8c0-546cc73eeb9b",
+        "07f7c98f-d3f0-4a26-810a-9c35388d4d7d",
+        "4262805f-91dd-481d-a660-62f27c710753"
     ],
     "tutorial": ""
 }
