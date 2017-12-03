@@ -8,5 +8,5 @@ direction = 90;
 target = noone;
 path = noone;
 
-s_set_road_side()
+//s_set_road_side()
 

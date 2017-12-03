@@ -2,8 +2,7 @@
 // You can write your code in this editor
 
 if (side = noone) {
-	var road = instance_place(x, y, o_road_base);
-	side = get_lane_direction(road);
+	set_my_side();
 }
 
 //var road = instance_place(x, y, o_road_base);
