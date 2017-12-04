@@ -8,8 +8,6 @@ var h_space = 20;
 
 var i = 0;
 
-instance_create_layer(0, 0, "Instances", o_camera);
-
 instance_create_layer(global.view_width/2, h_offset, "Instances", o_title);
 h_offset+=sprite_get_height(s_title);
 i+=2;

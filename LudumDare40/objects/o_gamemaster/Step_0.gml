@@ -26,7 +26,7 @@ if(keyboard_check_pressed(vk_numpad6) ) {
 	room_goto_next();
 }
 if(keyboard_check_pressed(vk_numpad4) ) {
-	room_goto_previous();
+	room_goto(room_last);
 }
 
 if(keyboard_check_pressed(vk_numpad5) ) {

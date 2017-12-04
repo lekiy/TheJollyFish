@@ -10,6 +10,8 @@ global.level_failed = false;
 global.level_passed = false;
 global.speed_modifier = 1;
 
+global.camera = instance_create_layer(0, 0, "Instances", o_camera);
+
 working_level = r_lvl_7;
 
 // 0 right

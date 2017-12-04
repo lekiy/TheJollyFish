@@ -2,7 +2,7 @@
     "id": "e97d27fd-ca7a-4346-9b2c-9ffeaca90cec",
     "modelName": "GMTileSet",
     "mvc": "1.11",
-    "name": "tileset0",
+    "name": "ts_grass",
     "auto_tile_sets": [
         {
             "id": "4be4a5ef-4208-46ea-96e2-04cb6f5f81ff",
@@ -42,7 +42,7 @@
     "out_tilehborder": 2,
     "out_tilevborder": 2,
     "spriteId": "cceca27f-0253-4258-b9d8-01107472852a",
-    "sprite_no_export": true,
+    "sprite_no_export": false,
     "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
     "tile_animation": {
         "AnimationCreationOrder": null,

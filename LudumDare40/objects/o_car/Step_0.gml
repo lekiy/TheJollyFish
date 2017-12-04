@@ -58,7 +58,10 @@ if (place_meeting(x, y, o_car)) {
 		global.collision_count++;	
 		instance_destroy();
 		instance_destroy(otherCar);
-		//audio_play_sound(a_crash1, 3, false);
+		var crash_sfx = crash_sounds[irandom(3)];
+		audio_sound_pitch(crash_sfx, 1+random_range(-0.1, 0.1));
+		audio_play_sound(crash_sfx, 2, false);
+		set_screen_shake(5, room_speed*0.5);
 	}
 }
 
