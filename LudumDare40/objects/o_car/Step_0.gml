@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+depth = -y;
+
 var meet_car = false;
 var mylane = true;
 var apply_breaks = false;
