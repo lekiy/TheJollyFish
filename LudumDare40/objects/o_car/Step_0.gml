@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-var meet_car = noone;
+var meet_car = false;
 
 var x_ahead = x+lengthdir_x(TILE_SIZE, direction);
 var y_ahead = y+lengthdir_y(TILE_SIZE, direction);
@@ -16,7 +16,15 @@ mylane = (!place_meeting(x_ahead, y_ahead, o_hazard)) ? true : false;
 
 if (place_meeting(x_ahead_short, y_ahead_short, o_car)) {
 	var otherCar = instance_place(x_ahead_short, y_ahead_short, o_car);
-	meet_car = (mylane) ? true : false;
+	var diff = direction - otherCar.direction;
+
+	if(diff > 90 || -90 > diff) {
+		global.collision_count++;	
+		instance_destroy();
+		instance_destroy(otherCar);
+	} else {
+		meet_car = true;
+	}
 }
 
 is_stopped = meet_stoplight || meet_car;
