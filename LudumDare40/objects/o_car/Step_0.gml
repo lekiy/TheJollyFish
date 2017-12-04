@@ -69,10 +69,10 @@ mylane = !meet_hazard;
 
 if(path == noone){
 	path = create_path_from_coords(x, y, direction, mylane);
-	path_start(path, move_speed, path_action_stop, true);
+	path_start(path, move_speed*global.speed_modifier, path_action_stop, true);
 }
 
-path_speed = (is_stopped) ? 0 : move_speed;
+path_speed = (is_stopped) ? 0 : move_speed*global.speed_modifier;
 path_speed = (apply_breaks) ? path_speed / 2 : path_speed;
 
 image_angle = direction;
@@ -80,5 +80,6 @@ image_angle = direction;
 
 /* Kill old cars if off canvas */
 if(!point_in_rectangle(x, y, -TILE_SIZE, -TILE_SIZE, room_width+TILE_SIZE, room_height+TILE_SIZE)){
+	global.cars_passed++;
 	instance_destroy();
 }

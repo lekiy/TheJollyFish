@@ -16,6 +16,7 @@ if(set_repeat){
 		alarm[0] = spawn_time_list[| spawn_index];
 		spawn_index++;
 	
-		show_debug_message("spawned");
+		//show_debug_message("spawned");
 	}
+	global.cars_spawned++;
 }

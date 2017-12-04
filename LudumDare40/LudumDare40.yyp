@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "1e0de935-66df-4a1b-8946-fea2293a822d",
+            "Value": {
+                "id": "cf4a21d7-af4a-4509-b69a-c4fbad9a3d5d",
+                "resourcePath": "shaders\\sh_car_color\\sh_car_color.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "22b76b1c-eb3e-42a3-a7bd-3719adbf23f2",
             "Value": {
                 "id": "49fe4e20-fa03-4759-bf05-0c9484dda57e",
@@ -159,6 +167,22 @@
             }
         },
         {
+            "Key": "3b4b723d-7de1-4b59-8605-9cbf172a54c9",
+            "Value": {
+                "id": "ebd9f8c0-de05-48a5-9072-7558825d885f",
+                "resourcePath": "sprites\\s_car_color\\s_car_color.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3e276bf3-e118-49a4-bae0-93e94a105c4e",
+            "Value": {
+                "id": "29479034-8921-4c67-8c68-1ab7e5895267",
+                "resourcePath": "objects\\o_game_menu\\o_game_menu.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4262805f-91dd-481d-a660-62f27c710753",
             "Value": {
                 "id": "487c9cee-efd9-43dd-a168-8bc5edce73ab",
@@ -219,6 +243,14 @@
             "Value": {
                 "id": "02cba513-b386-4b7f-8548-77675f0b17ae",
                 "resourcePath": "sprites\/s_road\/s_road.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5b7e9c2e-32a8-409f-800f-684f3052bc0d",
+            "Value": {
+                "id": "33662bff-1ea1-4224-b56c-7729ce0a9b6b",
+                "resourcePath": "sprites\\s_button_restart\\s_button_restart.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -295,11 +327,27 @@
             }
         },
         {
+            "Key": "7eb33453-7644-4829-a539-14b3af82302c",
+            "Value": {
+                "id": "3159cf8b-dc9a-48af-876b-318ea8d9b073",
+                "resourcePath": "views\\7eb33453-7644-4829-a539-14b3af82302c.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "816309e2-7136-4825-b7d0-7be3407218c2",
             "Value": {
                 "id": "22f0c575-436c-4267-8e02-2cfd6af7a3e3",
                 "resourcePath": "sprites\/bg_panel\/bg_panel.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "83026c19-cf82-4a60-9b7e-2e7eb1b7dec2",
+            "Value": {
+                "id": "66ecadef-0b2a-4d8a-afc3-d8895ff247a0",
+                "resourcePath": "views\\83026c19-cf82-4a60-9b7e-2e7eb1b7dec2.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -314,7 +362,7 @@
             "Key": "88a8f9d8-9913-4e99-af84-29a0a05660ea",
             "Value": {
                 "id": "869e265c-8f42-4f43-9e55-eaf56e9214ec",
-                "resourcePath": "objects\/o_room_starter\/o_room_starter.yy",
+                "resourcePath": "objects\\o_button_level_start\\o_button_level_start.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -324,14 +372,6 @@
                 "id": "d3d5d410-8b0e-4434-a3ae-833f63e5a9f1",
                 "resourcePath": "scripts\/s_set_road_side\/s_set_road_side.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "8fdaf94b-968b-48de-9ba4-5aa869684b11",
-            "Value": {
-                "id": "3f1a325a-51c1-48fa-9865-5cb78932c731",
-                "resourcePath": "rooms\/r_lvl_2_1\/r_lvl_2_1.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
@@ -348,6 +388,14 @@
                 "id": "24aeeadf-a5f3-4243-89ea-b661c7dd64f4",
                 "resourcePath": "views\/90be83e0-4e0a-46bf-a4e5-37dc4cc418cb.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "969016f6-0765-455c-b877-9c20c5f677b4",
+            "Value": {
+                "id": "6c4617b5-b912-45df-a0e8-810c545afbee",
+                "resourcePath": "sprites\\m_go\\m_go.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -503,6 +551,14 @@
             }
         },
         {
+            "Key": "c630bdf1-0042-4f2a-bd88-84244a411a42",
+            "Value": {
+                "id": "69c1a670-d289-413d-9f64-00dc23b20ba4",
+                "resourcePath": "fonts\\f_basic\\f_basic.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "c670365c-eb43-4c57-9274-d7c983adf10c",
             "Value": {
                 "id": "ccfda8fc-4666-4651-b739-db7e0a4c01a1",
@@ -524,6 +580,14 @@
                 "id": "64abf29a-fd87-4007-b85a-9a44761760a6",
                 "resourcePath": "rooms\/r_lvl_6\/r_lvl_6.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "c88cb44e-3888-427b-aa1c-0ed8289d32d6",
+            "Value": {
+                "id": "46e70843-1d22-4d3f-b078-c35049dedbc8",
+                "resourcePath": "objects\\o_button_restart\\o_button_restart.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -562,7 +626,7 @@
             "Key": "decc457c-7f21-4ab0-ac7c-8a99f90b27b9",
             "Value": {
                 "id": "bce68da9-7151-4007-85a5-48861aafa63a",
-                "resourcePath": "objects\/o_room_switcher\/o_room_switcher.yy",
+                "resourcePath": "objects\\o_button_level_next\\o_button_level_next.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -615,6 +679,14 @@
             }
         },
         {
+            "Key": "eda62eb4-5723-4ba3-b770-2631bc087951",
+            "Value": {
+                "id": "a8bc1f92-7327-47d5-a804-72c7acaf656b",
+                "resourcePath": "views\\eda62eb4-5723-4ba3-b770-2631bc087951.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "f1ba19cb-0c72-43b0-aede-f6396da620a1",
             "Value": {
                 "id": "5ab746cb-2bbd-4aff-9d1d-22de2e9de8e2",
@@ -636,6 +708,14 @@
                 "id": "0689c532-2c97-4356-855d-a3c0ba3aa4ca",
                 "resourcePath": "options\/mac\/options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "fa7fdf79-3e2f-487d-aa8e-ab58087b9f56",
+            "Value": {
+                "id": "7fb2f89b-c3e9-4a2e-8b9d-ca97a6ecc64f",
+                "resourcePath": "rooms\\r_lvl_7\\r_lvl_7.yy",
+                "resourceType": "GMRoom"
             }
         }
     ],

@@ -12,10 +12,11 @@ Try to stop traffic from building up and cause accidents!
 
 ![Alt text](/demo.gif?raw=true "Traffic Trouble")
 
-## Instructions
-* :red_car: Click lights to change them.
-* :blue_car: **Space** to reset level
-* :red_car: **Enter** to go back to title menu.
+## Short-Cuts
+* :blue_car: Click lights to change them.
+* :red_car: **Space** to reset level
+* :blue_car: **Enter** to start level
+* :red_car: **Escape** to go back to title menu, or Exit game from title menu.
 
 ## Developed by team Jollyfish
 

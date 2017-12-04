@@ -6,8 +6,6 @@ var yy = camera_get_view_y(view_camera[0]);
 var gui_modi_x = display_get_gui_width()/view_wport[0];
 var gui_modi_y = display_get_gui_height()/view_hport[0];
 
-event_inherited();
-
 draw_set_color(c_blue)
 draw_rectangle(x-sprite_width/2, y-sprite_height/2, x+sprite_width/2, y+sprite_height/2, false);
 draw_set_color(c_red);
