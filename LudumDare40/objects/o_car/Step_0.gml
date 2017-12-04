@@ -18,10 +18,11 @@ if (place_meeting(x_ahead_short, y_ahead_short, o_car)) {
 	var otherCar = instance_place(x_ahead_short, y_ahead_short, o_car);
 	var diff = direction - otherCar.direction;
 
-	if(diff > 90 || -90 > diff) {
+	if(diff > 20 || -20 > diff) {
 		global.collision_count++;	
 		instance_destroy();
 		instance_destroy(otherCar);
+		//audio_play_sound(a_crash1, 3, false);
 	} else {
 		meet_car = true;
 	}
