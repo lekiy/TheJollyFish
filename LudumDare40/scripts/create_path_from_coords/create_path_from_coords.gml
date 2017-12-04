@@ -8,6 +8,7 @@ var yy = argument1;
 var dir = argument2;
 var mylane = argument3;
 
+
 var road = instance_place(xx, yy, o_road_base);
 var path = path_add();
 var dir_index = round(dir/90);
@@ -24,18 +25,48 @@ if(instance_exists(road)){
 	switch(road.current_style){
 		case road_style.straight_vertical:
 			if(dir_index = up){
-				path_add_point(path, get_road_edge(road, right, inside_corner), get_road_edge(road, top, next_road), 100);
+				if (mylane) {
+					path_add_point(path, x, y-5, 100);
+					path_add_point(path, get_road_edge(road, right, inside_corner), get_road_edge(road, top, next_road)+5, 100);
+					path_add_point(path, get_road_edge(road, right, inside_corner), get_road_edge(road, top, next_road), 100);
+				} else {
+					path_add_point(path, x, y-5, 100);
+					path_add_point(path, get_road_edge(road, left, inside_corner), get_road_edge(road, top, next_road)+5, 100);
+					path_add_point(path, get_road_edge(road, left, inside_corner), get_road_edge(road, top, next_road), 100);
+				}
 			}
 			if(dir_index = down){
-				path_add_point(path, get_road_edge(road, left, inside_corner), get_road_edge(road, bottom, 0.8), 100);
+				if (mylane) {
+					path_add_point(path, x, y+5, 100);
+					path_add_point(path, get_road_edge(road, left, inside_corner), get_road_edge(road, bottom, 0.8)-5, 100);
+					path_add_point(path, get_road_edge(road, left, inside_corner), get_road_edge(road, bottom, 0.8), 100);
+				} else {
+					path_add_point(path, x, y+5, 100);
+					path_add_point(path, get_road_edge(road, right, inside_corner), get_road_edge(road, bottom, 0.8)-5, 100);
+					path_add_point(path, get_road_edge(road, right, inside_corner), get_road_edge(road, bottom, 0.8), 100);
+				}
 			}
 			break;
 		case road_style.straight_horizontal:
 			if(dir_index = right){
-				path_add_point(path, get_road_edge(road, right, next_road), get_road_edge(road, bottom, inside_corner), 100);
+				path_add_point(path, x+5, y, 100);
+				if (mylane) {
+					path_add_point(path, get_road_edge(road, right, next_road)-5, get_road_edge(road, bottom, inside_corner), 100);
+					path_add_point(path, get_road_edge(road, right, next_road), get_road_edge(road, bottom, inside_corner), 100);
+				} else {
+					path_add_point(path, get_road_edge(road, right, next_road)-5, get_road_edge(road, top, inside_corner), 100);
+					path_add_point(path, get_road_edge(road, right, next_road), get_road_edge(road, top, inside_corner), 100);
+				}
 			}
 			if(dir_index = left){
-				path_add_point(path, get_road_edge(road, left, next_road), get_road_edge(road, top, inside_corner), 100);
+				path_add_point(path, x-5, y, 100);
+				if (mylane) {
+					path_add_point(path, get_road_edge(road, left, next_road)+5, get_road_edge(road, top, inside_corner), 100);
+					path_add_point(path, get_road_edge(road, left, next_road), get_road_edge(road, top, inside_corner), 100);
+				} else {
+					path_add_point(path, get_road_edge(road, left, next_road)+5, get_road_edge(road, bottom, inside_corner), 100);
+					path_add_point(path, get_road_edge(road, left, next_road), get_road_edge(road, bottom, inside_corner), 100);
+				}
 			}
 			break;
 		case road_style.intersection:
