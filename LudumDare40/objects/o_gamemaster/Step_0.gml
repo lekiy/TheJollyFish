@@ -26,11 +26,11 @@ if(keyboard_check_pressed(vk_numpad6) ) {
 	room_goto_next();
 }
 if(keyboard_check_pressed(vk_numpad4) ) {
-	room_goto(room_last);
+	room_goto_previous();
 }
 
 if(keyboard_check_pressed(vk_numpad5) ) {
-	room_goto(working_level);
+	room_goto(room_last);
 }
 
 if(global.level_passed || global.level_failed){
