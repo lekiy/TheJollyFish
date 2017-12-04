@@ -5,9 +5,9 @@ switch(side) {
 	case roadside.rdown:
 		image_index = (current_state) ? 1 : 0; break;
 	case roadside.rup:
-		image_index = (current_state) ? 3 : 2; break;
+		image_index = (current_state) ? 5 : 4; break;
 	case roadside.rright:
-		image_index = (current_state) ? 1 : 0; break;
+		image_index = (current_state) ? 5 : 4; break;
 	case roadside.rleft:
 		image_index = (current_state) ? 3 : 2; break;
 }
