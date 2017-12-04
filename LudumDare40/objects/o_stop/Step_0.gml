@@ -5,6 +5,12 @@ if (side = noone) {
 	set_my_side();
 }
 
+if(self_controlled && ! initialized){
+	alarm[0] = initial_duration;
+	initialized = true;
+	current_state = irandom(1);
+}
+
 //var road = instance_place(x, y, o_road_base);
 //side = get_lane_direction(road);
 

@@ -7,4 +7,15 @@ stop_obj = noone;
 current_state = false;
 flip_rate = room_speed*3;
 
+randomize();
+
+self_controlled = false;
+change_duration = room_speed*3;
+initial_duration = room_speed*irandom(4)+1;
+
+initialized = false;
+
+
+
+
 //s_set_road_side();
