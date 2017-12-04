@@ -4,16 +4,16 @@
 
 
 switch(side) {
-	case roadside.rdown:
+	case roadside.rleft:
 		image_index = (current_state) ? 1 : 0; 
 		y_flip = 1; break;
 	case roadside.rup:
 		image_index = (current_state) ? 5 : 4; 
 		y_flip = -1; break;
-	case roadside.rright:
+	case roadside.rdown:
 		image_index = (current_state) ? 5 : 4; 
 		y_flip = 1; break;
-	case roadside.rleft:
+	case roadside.rright:
 		image_index = (current_state) ? 3 : 2; 
 		y_flip = 1; break;
 }

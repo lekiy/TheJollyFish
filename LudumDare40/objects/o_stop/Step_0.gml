@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (side = noone) {
-	set_my_side();
+if (side == noone) {
+	s_set_road_side();
 }
 
 if(self_controlled && ! initialized){
