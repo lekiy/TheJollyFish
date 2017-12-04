@@ -4,8 +4,10 @@ var road = instance_place(x, y, o_road_base);
 var dir = get_lane_direction_degrees(road);
 
 if(set_repeat){
-	var spawn = instance_create_layer(x, y, "Instances", o_car);
-	spawn.direction = dir;
+	if (!place_meeting(x, y, o_car)) {
+		var spawn = instance_create_layer(x, y, "Instances", o_car);
+		spawn.direction = dir;
+	}
 	alarm[0] = repeat_interval;
 }else{
 	if(spawn_index < ds_list_size(spawn_list)){

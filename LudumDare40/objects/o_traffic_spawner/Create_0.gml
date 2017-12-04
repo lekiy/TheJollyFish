@@ -3,6 +3,7 @@
 
 count = 1;
 rate = 0.6;
+visible = false;
 
 initial_start_time = room_speed*0.5;
 
@@ -15,6 +16,6 @@ spawn_index = 0;
 side = noone;
 
 set_repeat = false;
-repeat_interval = room_speed*0.8;
+repeat_interval = room_speed*2;
 
 s_set_road_side();
