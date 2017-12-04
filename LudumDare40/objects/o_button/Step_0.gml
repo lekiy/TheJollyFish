@@ -11,5 +11,3 @@ if(mouse_check_button_pressed(mb_left)){
 		event_user(0);	
 	}
 }
-
-show_debug_message(mouse_x-xx);

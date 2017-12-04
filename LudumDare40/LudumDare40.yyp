@@ -324,25 +324,6 @@
             }
         },
         {
-            "Key": "4169c4a0-92e6-4bba-821c-d4f34e99e3e6",
-            "Value": {
-                "id": "4e7be7b4-7229-47c4-bf90-37eae29a4eee",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "rooms\/r_main1211\/r_main1211.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "4262805f-91dd-481d-a660-62f27c710753",
             "Value": {
                 "id": "487c9cee-efd9-43dd-a168-8bc5edce73ab",
@@ -416,6 +397,25 @@
                 ],
                 "resourcePath": "sprites\/s_button_exit\/s_button_exit.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "495e36cd-cab4-4f85-9510-108dfb00da87",
+            "Value": {
+                "id": "29ffcfd3-7244-4a07-80e0-23c976038024",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\/4169c4a0-92e6-4bba-821c-d4f34e99e3e6-room.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -585,7 +585,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "rooms\/r_main\/r_main.yy",
+                "resourcePath": "rooms\/r_lvl_1\/r_lvl_1.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -604,7 +604,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "rooms\/r_main121\/r_main121.yy",
+                "resourcePath": "rooms\/r_lvl_5\/r_lvl_5.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -739,6 +739,25 @@
                 ],
                 "resourcePath": "scripts\/s_set_road_side\/s_set_road_side.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8fdaf94b-968b-48de-9ba4-5aa869684b11",
+            "Value": {
+                "id": "3f1a325a-51c1-48fa-9865-5cb78932c731",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "rooms\/r_lvl_2_1\/r_lvl_2_1.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -984,7 +1003,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "rooms\/r_main11\/r_main11.yy",
+                "resourcePath": "rooms\/r_lvl_2\/r_lvl_2.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -1350,6 +1369,25 @@
             }
         },
         {
+            "Key": "ecf0c558-b79c-417f-b1ee-f7e288c8a963",
+            "Value": {
+                "id": "8b6ee3d3-cd7c-4d11-800d-5e2aa9963a27",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/o_go\/o_go.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ed6a43af-0bd8-41d6-aa9a-706d6c99be3f",
             "Value": {
                 "id": "92371c54-ce75-470b-acd3-c0ac3c41f678",
@@ -1364,7 +1402,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "rooms\/r_main1\/r_main1.yy",
+                "resourcePath": "rooms\/r_lvl_3\/r_lvl_3.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -1383,7 +1421,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "rooms\/r_main12\/r_main12.yy",
+                "resourcePath": "rooms\/r_lvl_4\/r_lvl_4.yy",
                 "resourceType": "GMRoom"
             }
         },

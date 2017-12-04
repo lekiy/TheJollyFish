@@ -1,3 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-room_goto(r_lvl_1);
+
+event_inherited()
+
+current_state = true;

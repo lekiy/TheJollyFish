@@ -5,8 +5,8 @@ var meet_car = false;
 var x_ahead = x+lengthdir_x(TILE_SIZE, direction);
 var y_ahead = y+lengthdir_y(TILE_SIZE, direction);
 
-var x_ahead_short = x+(lengthdir_x(TILE_SIZE, direction) / 4);
-var y_ahead_short = y+(lengthdir_y(TILE_SIZE, direction) / 4);
+var x_ahead_short = x+(lengthdir_x(TILE_SIZE, direction) / 3);
+var y_ahead_short = y+(lengthdir_y(TILE_SIZE, direction) / 3);
 
 
 /** Collisions */
@@ -18,7 +18,7 @@ if (place_meeting(x_ahead_short, y_ahead_short, o_car)) {
 	var otherCar = instance_place(x_ahead_short, y_ahead_short, o_car);
 	var diff = direction - otherCar.direction;
 
-	if(diff > 20 || -20 > diff) {
+	if(diff > 50 || -50 > diff) {
 		global.collision_count++;	
 		instance_destroy();
 		instance_destroy(otherCar);
