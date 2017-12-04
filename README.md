@@ -24,9 +24,10 @@ Try to stop traffic from building up and cause accidents!
 * :red_car: [Jonathan Stassen](http://jstassen.com) (Code, and Resource Management)
 * :blue_car: [Emily Annen](https://www.facebook.com/aviumphotography.ea/) (Snack Runs)
 
-https://www.youtube.com/watch?v=CLnbLH9DiyM
+https://youtu.be/CLnbLH9DiyM
 
-https://www.youtube.com/watch?v=jEby6NKHxIQ
+https://youtu.be/jEby6NKHxIQ
 
+https://youtu.be/sDnAjnL3Cf0
 
 This version is for the 48 hour mark, and the game will have minor updates over the next 24 hours of the jam.
