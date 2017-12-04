@@ -1,11 +1,12 @@
 ///@arg x
 ///@arg y
 ///@arg dir
+///@arg mylane
 
 var xx = argument0;
 var yy = argument1;
 var dir = argument2;
-
+var mylane = argument3;
 
 var road = instance_place(xx, yy, o_road_base);
 var path = path_add();
