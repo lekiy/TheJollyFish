@@ -56,6 +56,8 @@ if (place_meeting(x, y, o_car)) {
 
 	if(diff > CRASH_THRESHOLD || -CRASH_THRESHOLD > diff) {
 		global.collision_count++;	
+		create_car_fade_fx(sprite_index, image_index, x, y, image_angle, depth-1);
+		create_car_fade_fx(otherCar.sprite_index, otherCar.image_index, otherCar.x, otherCar.y, otherCar.image_angle, otherCar.depth-1)
 		instance_destroy();
 		instance_destroy(otherCar);
 		var crash_sfx = crash_sounds[irandom(3)];

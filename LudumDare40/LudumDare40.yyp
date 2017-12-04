@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "090132ba-335c-4cde-86cb-4cf74a499521",
+            "Value": {
+                "id": "b793dfd0-2125-4c60-bceb-d6bee6f04719",
+                "resourcePath": "objects\\o_fx_crash\\o_fx_crash.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "109e82a5-8578-4e7f-ad17-6eb7cf9e5fc2",
             "Value": {
                 "id": "9fc1bd88-2b0a-4101-a9fb-285bc82ca91a",
@@ -695,6 +703,14 @@
             }
         },
         {
+            "Key": "d6605264-3cac-4587-b7b1-fc533c126dbb",
+            "Value": {
+                "id": "8599fd53-06aa-4e6e-8877-7684a6f4d56d",
+                "resourcePath": "scripts\\create_car_fade_fx\\create_car_fade_fx.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d9affbb2-6fde-4a49-b3e0-b3ee04fb63bd",
             "Value": {
                 "id": "6ba9c93c-96f5-4715-868a-fe037603c275",
@@ -817,7 +833,8 @@
         "4262805f-91dd-481d-a660-62f27c710753",
         "22b76b1c-eb3e-42a3-a7bd-3719adbf23f2",
         "376cc36a-86c8-4335-937a-ae91194aa888",
-        "12be43a6-06b3-4bc5-9980-61d459017783"
+        "12be43a6-06b3-4bc5-9980-61d459017783",
+        "d6605264-3cac-4587-b7b1-fc533c126dbb"
     ],
     "tutorial": ""
 }
