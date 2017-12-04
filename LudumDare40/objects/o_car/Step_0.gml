@@ -5,7 +5,7 @@
 
 /** Collisions */
 is_stopped = (place_meeting(x, y, o_stopper)) ? true : false;
-mylane = (!place_meeting(x, y, o_hazard)) ? true : false;
+mylane = (!place_meeting(x+lengthdir_x(TILE_SIZE, direction), y+lengthdir_y(TILE_SIZE, direction), o_hazard)) ? true : false;
 
 /* Main path logic */
 if(path == noone){
