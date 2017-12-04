@@ -1,11 +1,25 @@
 /// @description Insert description here
 // You can write your code in this editor
+var meet_car = noone;
 
-//set_my_side();
+var x_ahead = x+lengthdir_x(TILE_SIZE, direction);
+var y_ahead = y+lengthdir_y(TILE_SIZE, direction);
+
+var x_ahead_short = x+(lengthdir_x(TILE_SIZE, direction) / 4);
+var y_ahead_short = y+(lengthdir_y(TILE_SIZE, direction) / 4);
+
 
 /** Collisions */
-is_stopped = (place_meeting(x, y, o_stopper)) ? true : false;
-mylane = (!place_meeting(x+lengthdir_x(TILE_SIZE, direction), y+lengthdir_y(TILE_SIZE, direction), o_hazard)) ? true : false;
+var meet_stoplight = (place_meeting(x_ahead_short, y_ahead_short, o_stopper)) ? true : false;
+
+mylane = (!place_meeting(x_ahead, y_ahead, o_hazard)) ? true : false;
+
+if (place_meeting(x_ahead_short, y_ahead_short, o_car)) {
+	var otherCar = instance_place(x_ahead_short, y_ahead_short, o_car);
+	meet_car = (mylane) ? true : false;
+}
+
+is_stopped = meet_stoplight || meet_car;
 
 /* Main path logic */
 if(path == noone){
