@@ -7,8 +7,8 @@ side = noone;
 direction = 90;
 target = noone;
 path = noone;
-image_index = irandom(1);
 image_speed = 0;
+image_index = irandom(1);
 
 //s_set_road_side()
 

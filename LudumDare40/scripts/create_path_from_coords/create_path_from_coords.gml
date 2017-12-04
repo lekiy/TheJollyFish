@@ -38,12 +38,12 @@ if(instance_exists(road)){
 			if(dir_index = down){
 				if (mylane) {
 					path_add_point(path, x, y+5, 100);
-					path_add_point(path, get_road_edge(road, left, inside_corner), get_road_edge(road, bottom, 0.8)-5, 100);
-					path_add_point(path, get_road_edge(road, left, inside_corner), get_road_edge(road, bottom, 0.8), 100);
+					path_add_point(path, get_road_edge(road, left, inside_corner), get_road_edge(road, bottom, next_road)-5, 100);
+					path_add_point(path, get_road_edge(road, left, inside_corner), get_road_edge(road, bottom, next_road), 100);
 				} else {
 					path_add_point(path, x, y+5, 100);
-					path_add_point(path, get_road_edge(road, right, inside_corner), get_road_edge(road, bottom, 0.8)-5, 100);
-					path_add_point(path, get_road_edge(road, right, inside_corner), get_road_edge(road, bottom, 0.8), 100);
+					path_add_point(path, get_road_edge(road, right, inside_corner), get_road_edge(road, bottom, next_road)-5, 100);
+					path_add_point(path, get_road_edge(road, right, inside_corner), get_road_edge(road, bottom, next_road), 100);
 				}
 			}
 			break;
@@ -90,14 +90,14 @@ if(instance_exists(road)){
 			
 			}
 			if(dir_index = right){
-				path_add_point(path, x, y, 25);
+				//path_add_point(path, x, y, 25);
 				path_add_point(path, get_road_edge(road, left, inside_corner), get_road_edge(road, bottom, next_road), 100);
 				
 			}
 			break;
 		case road_style.curved_se:
 			if(dir_index = up){
-				path_add_point(path, x, y, 25);
+				//path_add_point(path, x, y, 25);
 				path_add_point(path, get_road_edge(road, right, next_road), get_road_edge(road, bottom, inside_corner), 100);
 				
 			}
@@ -113,14 +113,14 @@ if(instance_exists(road)){
 			
 			}
 			if(dir_index = left){
-				path_add_point(path, x, y, 25);
+				//path_add_point(path, x, y, 25);
 				path_add_point(path, get_road_edge(road, right, inside_corner), get_road_edge(road, top, next_road), 100);
 				
 			}
 			break;
 		case road_style.curved_nw:
 			if(dir_index = down){
-				path_add_point(path, x, y, 25);
+				//path_add_point(path, x, y, 25);
 				path_add_point(path, get_road_edge(road, left, next_road), get_road_edge(road, top, inside_corner), 100);
 				
 			}
