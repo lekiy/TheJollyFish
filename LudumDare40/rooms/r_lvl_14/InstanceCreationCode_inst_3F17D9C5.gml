@@ -1,2 +1,2 @@
 count = 4;
-rate = 2;
+rate = 1.5;
