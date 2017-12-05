@@ -3,7 +3,7 @@
 depth = -y;
 
 var meet_car = false;
-var mylane = true;
+mylane = true;
 var apply_breaks = false;
 
 var CRASH_THRESHOLD = 30;
@@ -73,12 +73,13 @@ is_stopped = meet_stoplight || meet_car;
 mylane = !meet_hazard;
 
 if(path == noone){
-	path = create_path_from_coords(x, y, direction, mylane);
+	//path = create_path_from_coords(x, y, direction, mylane);
+	path = create_path_to_next_road(mylane);
 	path_start(path, move_speed*global.speed_modifier, path_action_stop, true);
 }
 
-path_speed = (is_stopped) ? 0 : move_speed*global.speed_modifier;
-path_speed = (apply_breaks) ? path_speed / 2 : path_speed;
+//path_speed = (is_stopped) ? 0 : move_speed*global.speed_modifier;
+//path_speed = (apply_breaks) ? path_speed / 2 : path_speed;
 
 image_angle = direction;
 
