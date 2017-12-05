@@ -1141,25 +1141,6 @@
             }
         },
         {
-            "Key": "8cb127a9-54f6-4f86-a44e-c47345187343",
-            "Value": {
-                "id": "d3d5d410-8b0e-4434-a3ae-833f63e5a9f1",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "scripts\/s_set_road_side\/s_set_road_side.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "906dacbd-a5aa-4307-b56c-1aa38bdf229f",
             "Value": {
                 "id": "06dcb1ba-d1dd-43ac-8c9c-861f334c8b94",
@@ -2113,7 +2094,6 @@
     "script_order": [
         "a9ef10b4-435f-4710-9810-8c9003c5f8bb",
         "c510b100-e844-417c-9bc9-e32e87037c72",
-        "8cb127a9-54f6-4f86-a44e-c47345187343",
         "22b76b1c-eb3e-42a3-a7bd-3719adbf23f2",
         "56b8fabf-d1b8-4d7a-a8c0-546cc73eeb9b",
         "07f7c98f-d3f0-4a26-810a-9c35388d4d7d",
