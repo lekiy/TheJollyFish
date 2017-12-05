@@ -21,7 +21,3 @@ crash_sounds[0] = a_crash_0;
 crash_sounds[1] = a_crash_1;
 crash_sounds[2] = a_crash_2;
 crash_sounds[3] = a_crash_3;
-
-
-//s_set_road_side()
-

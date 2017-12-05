@@ -27,13 +27,13 @@ if(current_style == noone){
 	switch(bit){
 		default: current_style = road_style.straight_vertical; break;
 		case 1: current_style = road_style.straight_horizontal; break;
-		case 3: current_style = road_style.curved_se; break;
+		case 3: current_style = road_style.curved_down_right; break;
 		case 4: current_style = road_style.straight_horizontal; break;
 		case 5: current_style = road_style.straight_horizontal; break;
-		case 6: current_style = road_style.curved_sw; break;
-		case 9: current_style = road_style.curved_ne; break;
+		case 6: current_style = road_style.curved_down_left; break;
+		case 9: current_style = road_style.curved_up_right; break;
 		case 10: current_style = road_style.straight_vertical; break;
-		case 12: current_style = road_style.curved_nw; break;
+		case 12: current_style = road_style.curved_up_left; break;
 		case 15: current_style = road_style.intersection; break;
 	}
 	

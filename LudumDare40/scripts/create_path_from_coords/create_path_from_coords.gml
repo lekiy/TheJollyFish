@@ -83,7 +83,7 @@ if(instance_exists(road)){
 				path_add_point(path, get_road_edge(road, left, next_road), get_road_edge(road, top, inside_corner), 100);
 			}
 			break;
-		case road_style.curved_sw:
+		case road_style.curved_down_left:
 			if(dir_index = up){
 				path_add_point(path, get_road_edge(road, right, inside_corner), get_road_edge(road, top, inside_corner), 100);
 				path_add_point(path, get_road_edge(road, left, next_road), get_road_edge(road, top, inside_corner), 100);
@@ -95,7 +95,7 @@ if(instance_exists(road)){
 				
 			}
 			break;
-		case road_style.curved_se:
+		case road_style.curved_down_right:
 			if(dir_index = up){
 				//path_add_point(path, x, y, 25);
 				path_add_point(path, get_road_edge(road, right, next_road), get_road_edge(road, bottom, inside_corner), 100);
@@ -106,7 +106,7 @@ if(instance_exists(road)){
 				path_add_point(path, get_road_edge(road, left, inside_corner), get_road_edge(road, bottom, next_road), 100);
 			}
 			break;
-		case road_style.curved_ne:
+		case road_style.curved_up_right:
 			if(dir_index = down){
 				path_add_point(path, get_road_edge(road, left, inside_corner), get_road_edge(road, bottom, inside_corner), 100);
 				path_add_point(path, get_road_edge(road, right, next_road), get_road_edge(road, bottom, inside_corner), 100);
@@ -118,11 +118,10 @@ if(instance_exists(road)){
 				
 			}
 			break;
-		case road_style.curved_nw:
+		case road_style.curved_up_left:
 			if(dir_index = down){
-				//path_add_point(path, x, y, 25);
+				path_add_point(path, x, y, 25);
 				path_add_point(path, get_road_edge(road, left, next_road), get_road_edge(road, top, inside_corner), 100);
-				
 			}
 			if(dir_index = right){
 				path_add_point(path, get_road_edge(road, right, inside_corner), get_road_edge(road, bottom, inside_corner), 100);

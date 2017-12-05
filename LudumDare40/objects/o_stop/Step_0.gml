@@ -1,9 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (side == noone) {
-	s_set_road_side();
-}
+
+set_my_side();
 
 if(self_controlled && ! initialized){
 	alarm[0] = initial_duration;
@@ -11,9 +10,10 @@ if(self_controlled && ! initialized){
 	current_state = irandom(1);
 }
 
-//var road = instance_place(x, y, o_road_base);
-//side = get_lane_direction(road);
-
+/*
+var road = instance_place(x, y, o_road_base);
+side = get_lane_direction(road);
+*/
 
 if(!current_state){
 	if(!instance_exists(stop_obj)){

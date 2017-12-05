@@ -6,10 +6,10 @@ enum road_style {
 	straight_vertical,
 	straight_horizontal,
 	intersection,
-	curved_se,
-	curved_sw,
-	curved_ne,
-	curved_nw
+	curved_down_right,
+	curved_down_left,
+	curved_up_right,
+	curved_up_left
 }
 current_style = noone;
 

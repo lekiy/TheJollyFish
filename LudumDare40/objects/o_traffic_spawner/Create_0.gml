@@ -17,7 +17,3 @@ side = noone;
 
 set_repeat = false;
 repeat_interval = room_speed*2;
-
-
-
-s_set_road_side();
