@@ -1,2 +1,2 @@
-count = 4;
-rate = 2;
+count = 6;
+rate = 5;
