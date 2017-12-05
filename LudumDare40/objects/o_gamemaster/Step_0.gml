@@ -44,3 +44,10 @@ if(global.cars_passed >= global.cars_total){
 if(global.collision_count > 0){
 	global.level_failed = true;	
 }
+
+if(global.cursor_is_on_clickable){
+	window_set_cursor(cr_handpoint);
+	global.cursor_is_on_clickable = false;
+}else{
+	window_set_cursor(cr_default);
+}	

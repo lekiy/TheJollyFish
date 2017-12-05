@@ -12,6 +12,7 @@ global.speed_modifier = 1;
 
 global.camera = instance_create_layer(0, 0, "Instances", o_camera);
 
+global.cursor_is_on_clickable = false;
 //working_level = r_lvl_7;
 
 // 0 right
