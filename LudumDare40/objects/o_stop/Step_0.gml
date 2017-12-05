@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-set_my_side();
+set_lane_side();
 
 if(self_controlled && ! initialized){
 	alarm[0] = initial_duration;

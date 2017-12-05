@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-set_my_side();
+set_lane_side();
 
 if(global.level_started && !spawn_started){
 	repeat(count){
