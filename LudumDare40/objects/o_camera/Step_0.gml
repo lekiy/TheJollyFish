@@ -17,8 +17,10 @@ if(shake_screen){
 		shake_screen = false;	
 		//Set the position back to normal (will need to be changed to add new camera functions
 		if(!room == r_menu){
-			x = 0;
-			y = 0;
+			x*=0.2;
+			y*=0.2;
+			if(x < 1) x = 0;
+			if(y < 1) y = 0;
 		}
 	}
 }

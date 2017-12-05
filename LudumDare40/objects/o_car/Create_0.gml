@@ -9,6 +9,7 @@ target = noone;
 path = noone;
 image_speed = 0;
 image_index = irandom(1);
+has_entered = false;
 
 //shader stuff//
 upixelH = shader_get_uniform(sh_car_color, "pixelH");

@@ -84,7 +84,13 @@ image_angle = direction;
 
 
 /* Kill old cars if off canvas */
-if(!point_in_rectangle(x, y, -TILE_SIZE, -TILE_SIZE, room_width+TILE_SIZE, room_height+TILE_SIZE)){
-	global.cars_passed++;
-	instance_destroy();
+if(point_in_rectangle(x, y, 0, 0, room_width, room_height)){
+	has_entered = true;	
+}
+
+if(has_entered){
+	if(!point_in_rectangle(x, y, -TILE_SIZE, -TILE_SIZE, room_width+TILE_SIZE, room_height+TILE_SIZE)){
+		global.cars_passed++;
+		instance_destroy();
+	}
 }
