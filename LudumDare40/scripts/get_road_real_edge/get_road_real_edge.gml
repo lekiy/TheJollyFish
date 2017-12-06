@@ -13,19 +13,15 @@ var yy;
 
 if (mylane) {
 	if (dir_index == right) {
-		show_debug_message("heading to right");
 		return [road.bbox_left, road.bbox_bottom - LANE_OFFSET];
 	}
 	if (dir_index == left) {
-		show_debug_message("heading to left");
 		return [road.bbox_right, road.bbox_top + LANE_OFFSET];
 	}
 	if (dir_index == up) {
-		show_debug_message("heading to up");
 		return [road.bbox_right - LANE_OFFSET, road.bbox_bottom];
 	}
 	if (dir_index == down) {
-		show_debug_message("heading to down");
 		return [road.bbox_left + LANE_OFFSET, road.bbox_top];
 	}
 } else {

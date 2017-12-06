@@ -1,6 +1,12 @@
 ///@arg ourRoad
 ///@arg direction
 
+/** 
+Given a road tile & a current direction
+what is the new direction after traveling on the road?
+*/
+
+
 var ourRoad = argument0;
 var in_direction = argument1;
 var roadStyle = ourRoad.current_style;
