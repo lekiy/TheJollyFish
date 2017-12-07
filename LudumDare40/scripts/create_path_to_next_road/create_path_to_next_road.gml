@@ -12,17 +12,20 @@ var new_direction;
 
 
 //path_add_point(path, x, y, 100);
-var ourRoad = instance_position(x, y, o_road_base);
+
 var nextRoad = noone; 
 
+var ourRoad = instance_position(x, y, o_road_base);
 if (ourRoad != -4) {
-	new_direction = get_direction_next(ourRoad, dir_index);
-	nextRoad = get_road_next(ourRoad, new_direction);
+	
+	var new_direction = get_direction_next(ourRoad, dir_index);
+	var nextRoad = get_road_next(ourRoad, new_direction);
+	
 	if (nextRoad != -4) {
 		var coords = get_road_real_edge(nextRoad, new_direction, mylane);
-
+		path = get_smoothest_path(path, x,y, coords[0], coords[1], dir_index, new_direction);	
 //		path_add_point(path, coords[0], coords[1], 100);
-		path = get_smooth_path(path, x,y, coords[0], coords[1], dir_index, new_direction);
+		
 	} else {
 		show_debug_message("nextRoad - Lost car at:");
 		show_debug_message([x,y]);

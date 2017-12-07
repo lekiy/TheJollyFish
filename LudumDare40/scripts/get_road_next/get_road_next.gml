@@ -1,5 +1,6 @@
 ///@arg ourRoad
 ///@arg direction
+// Relative to the tile, get the next tile in a given direction
 
 var ourRoad = argument0;
 var in_direction = argument1;

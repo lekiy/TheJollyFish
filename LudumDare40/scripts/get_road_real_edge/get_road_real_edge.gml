@@ -2,6 +2,13 @@
 ///@arg dir_index
 ///@arg mylane
 
+/**
+	Given a road, direction of travel, and if we are in our lane
+	Return the pixel location of the start of the next tile
+	
+	Think of this as: What pixel should the car enter/start on for a new tile.
+*/
+
 var road = argument0;
 var dir_index = argument1;
 var mylane = argument2;
@@ -12,33 +19,48 @@ var xx;
 var yy;
 
 if (mylane) {
+	// ◻◻
+	// ◧◻
 	if (dir_index == right) {
 		return [road.bbox_left, road.bbox_bottom - LANE_OFFSET];
 	}
+	// ◻◨
+	// ◻◻
 	if (dir_index == left) {
 		return [road.bbox_right, road.bbox_top + LANE_OFFSET];
 	}
+	// ◻◻
+	// ◻⬓
 	if (dir_index == up) {
 		return [road.bbox_right - LANE_OFFSET, road.bbox_bottom];
 	}
+	// ⬒◻
+	// ◻◻
 	if (dir_index == down) {
 		return [road.bbox_left + LANE_OFFSET, road.bbox_top];
 	}
 } else {
+	// ◧◻
+	// ◻◻
 	if (dir_index == right) {
 		return [road.bbox_left, road.bbox_top - LANE_OFFSET];
 	}
+	// ◻◻
+	// ◻◨
 	if (dir_index == left) {
 		return [road.bbox_right, road.bbox_bottom + LANE_OFFSET];
 	}
+	// ◻◻
+	// ⬓◻
 	if (dir_index == up) {
 		return [road.bbox_left + LANE_OFFSET, road.bbox_bottom];
 	}
+	// ◻⬒
+	// ◻◻
 	if (dir_index == down) {
 		return [road.bbox_right - LANE_OFFSET, road.bbox_top];
 	}
 }
-
 
 /**
 // solve x

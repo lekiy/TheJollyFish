@@ -25,6 +25,7 @@ var dir_end = argument6;
 
 var SMOOTH_OFFSET = 5;
 
+
 // Defaulting values
 x2 = x1;
 y2 = y1

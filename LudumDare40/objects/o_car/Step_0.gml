@@ -78,8 +78,8 @@ if(path == noone){
 	path_start(path, move_speed*global.speed_modifier, path_action_stop, true);
 }
 
-//path_speed = (is_stopped) ? 0 : move_speed*global.speed_modifier;
-//path_speed = (apply_breaks) ? path_speed / 2 : path_speed;
+path_speed = (is_stopped) ? 0 : move_speed*global.speed_modifier;
+path_speed = (apply_breaks) ? path_speed / 2 : path_speed;
 
 image_angle = direction;
 
