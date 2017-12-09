@@ -27,7 +27,7 @@ if (place_meeting(x_ahead_medium, y_ahead_medium, o_car)) {
 	if (instance_exists(otherCar)) {
 		var diff = direction - otherCar.direction;
 
-		if(!(diff > 10 || -10 > diff)) {
+		if(!(diff > CRASH_THRESHOLD || -CRASH_THRESHOLD > diff)) {
 			apply_breaks = true;
 		}
 	}
@@ -40,7 +40,7 @@ if (place_meeting(x_ahead_short, y_ahead_short, o_car)) {
 	if (instance_exists(otherCar)) {
 		var diff = direction - otherCar.direction;
 
-		if(!(diff > 10 || -10 > diff)) {
+		if(!(diff > CRASH_THRESHOLD || -CRASH_THRESHOLD > diff)) {
 			// Very close to car
 			if (place_meeting(x_ahead_short, y_ahead_short, o_car)) {
 				meet_car = true;

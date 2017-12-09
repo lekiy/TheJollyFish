@@ -27,6 +27,14 @@ if (ourRoad != -4) {
 //		path_add_point(path, coords[0], coords[1], 100);
 		
 	} else {
+		
+		//lengthdir_x(TILE_SIZE, dir_index);
+		var coords = get_road_edge(ourRoad, dir_index, 1);
+		path = get_smoothest_path(path, x,y, coords[0], coords[1], dir_index, new_direction);	
+		//var coords = get_road_real_edge(ourRoad, new_direction, mylane);
+		//path = get_smoothest_path(path, x,y, coords[0], coords[1], dir_index, new_direction);
+
+
 		show_debug_message("nextRoad - Lost car at:");
 		show_debug_message([x,y]);
 	}

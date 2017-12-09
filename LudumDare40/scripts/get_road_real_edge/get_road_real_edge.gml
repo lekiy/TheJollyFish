@@ -43,12 +43,12 @@ if (mylane) {
 	// ◧◻
 	// ◻◻
 	if (dir_index == right) {
-		return [road.bbox_left, road.bbox_top - LANE_OFFSET];
+		return [road.bbox_left, road.bbox_top + LANE_OFFSET];
 	}
 	// ◻◻
 	// ◻◨
 	if (dir_index == left) {
-		return [road.bbox_right, road.bbox_bottom + LANE_OFFSET];
+		return [road.bbox_right, road.bbox_bottom - LANE_OFFSET];
 	}
 	// ◻◻
 	// ⬓◻
