@@ -1,6 +1,7 @@
 ///@arg road
 ///@arg dir_index
 ///@arg mylane
+///@arg exiting
 
 /**
 	Given a road, direction of travel, and if we are in our lane
@@ -12,6 +13,7 @@
 var road = argument0;
 var dir_index = argument1;
 var mylane = argument2;
+var exiting = argument3;
 
 var LANE_OFFSET = TILE_SIZE / 4;
 
@@ -46,28 +48,7 @@ yMap[left, top] = [road.bbox_left, road.bbox_top + LANE_OFFSET];
 yMap[left, bottom] = [road.bbox_left, road.bbox_bottom - LANE_OFFSET];
 
 
-if (mylane) {
-	// ◻◻
-	// ◧◻
-	if (dir_index == right) {
-		return yMap[left, bottom];
-	}
-	// ◻◨
-	// ◻◻
-	if (dir_index == left) {
-		return yMap[right, top];
-	}
-	// ◻◻
-	// ◻⬓
-	if (dir_index == up) {
-		return yMap[bottom, right];
-	}
-	// ⬒◻
-	// ◻◻
-	if (dir_index == down) {
-		return yMap[top, left];
-	}
-} else {
+if (!mylane) {
 	// ◧◻
 	// ◻◻
 	if (dir_index == right) {
@@ -88,7 +69,50 @@ if (mylane) {
 	if (dir_index == down) {
 		return yMap[top, right];
 	}
+} else if (exiting) {
+	// ◧◻
+	// ◻◻
+	if (dir_index == left) {
+		return yMap[left, top];
+	}
+	// ◻◻
+	// ◻◨
+	if (dir_index == right) {
+		return yMap[right, bottom];
+	}
+	// ◻◻
+	// ⬓◻
+	if (dir_index == down) {
+		return yMap[bottom, left];
+	}
+	// ◻⬒
+	// ◻◻
+	if (dir_index == up) {
+		return yMap[top, right];
+	}
+} else {
+	// ◻◻
+	// ◧◻
+	if (dir_index == right) {
+		return yMap[left, bottom];
+	}
+	// ◻◨
+	// ◻◻
+	if (dir_index == left) {
+		return yMap[right, top];
+	}
+	// ◻◻
+	// ◻⬓
+	if (dir_index == up) {
+		return yMap[bottom, right];
+	}
+	// ⬒◻
+	// ◻◻
+	if (dir_index == down) {
+		return yMap[top, left];
+	}
 }
+
 
 
 

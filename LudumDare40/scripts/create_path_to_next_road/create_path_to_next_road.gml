@@ -22,14 +22,14 @@ if (ourRoad != -4) {
 	var nextRoad = get_road_next(ourRoad, new_direction);
 	
 	if (nextRoad != -4) {
-		var coords = get_road_real_edge(nextRoad, new_direction, mylane);
+		var coords = get_road_real_edge(nextRoad, new_direction, mylane, false);
 		path = get_smoothest_path(path, x,y, coords[0], coords[1], dir_index, new_direction);	
 //		path_add_point(path, coords[0], coords[1], 100);
 		
 	} else {
 		
 		//lengthdir_x(TILE_SIZE, dir_index);
-		var coords = get_road_edge(ourRoad, dir_index, 1);
+		var coords = get_road_real_edge(ourRoad, dir_index, 1, true);
 		path = get_smoothest_path(path, x,y, coords[0], coords[1], dir_index, new_direction);	
 		//var coords = get_road_real_edge(ourRoad, new_direction, mylane);
 		//path = get_smoothest_path(path, x,y, coords[0], coords[1], dir_index, new_direction);
