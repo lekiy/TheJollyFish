@@ -18,49 +18,79 @@ var LANE_OFFSET = TILE_SIZE / 4;
 var xx;
 var yy;
 
+
+var yMap = [];
+	// ⬒◻
+	// ◻◻
+yMap[top, left] = [road.bbox_left + LANE_OFFSET, road.bbox_top];
+	// ◻⬒
+	// ◻◻
+yMap[top, right] = [road.bbox_right - LANE_OFFSET, road.bbox_top];
+	// ◻◨
+	// ◻◻
+yMap[right, top] = [road.bbox_right, road.bbox_top + LANE_OFFSET];
+	// ◻◻
+	// ◻◨
+yMap[right, bottom] = [road.bbox_right, road.bbox_bottom - LANE_OFFSET];
+	// ◻◻
+	// ⬓◻
+yMap[bottom, left] = [road.bbox_left + LANE_OFFSET, road.bbox_bottom];
+	// ◻◻
+	// ◻⬓
+yMap[bottom, right] = [road.bbox_right - LANE_OFFSET, road.bbox_bottom];
+	// ◧◻
+	// ◻◻
+yMap[left, top] = [road.bbox_left, road.bbox_top + LANE_OFFSET];
+	// ◻◻
+	// ◧◻
+yMap[left, bottom] = [road.bbox_left, road.bbox_bottom - LANE_OFFSET];
+
+
 if (mylane) {
 	// ◻◻
 	// ◧◻
 	if (dir_index == right) {
-		return [road.bbox_left, road.bbox_bottom - LANE_OFFSET];
+		return yMap[left, bottom];
 	}
 	// ◻◨
 	// ◻◻
 	if (dir_index == left) {
-		return [road.bbox_right, road.bbox_top + LANE_OFFSET];
+		return yMap[right, top];
 	}
 	// ◻◻
 	// ◻⬓
 	if (dir_index == up) {
-		return [road.bbox_right - LANE_OFFSET, road.bbox_bottom];
+		return yMap[bottom, right];
 	}
 	// ⬒◻
 	// ◻◻
 	if (dir_index == down) {
-		return [road.bbox_left + LANE_OFFSET, road.bbox_top];
+		return yMap[top, left];
 	}
 } else {
 	// ◧◻
 	// ◻◻
 	if (dir_index == right) {
-		return [road.bbox_left, road.bbox_top + LANE_OFFSET];
+		return yMap[left, top];
 	}
 	// ◻◻
 	// ◻◨
 	if (dir_index == left) {
-		return [road.bbox_right, road.bbox_bottom - LANE_OFFSET];
+		return yMap[right, bottom];
 	}
 	// ◻◻
 	// ⬓◻
 	if (dir_index == up) {
-		return [road.bbox_left + LANE_OFFSET, road.bbox_bottom];
+		return yMap[bottom, left];
 	}
 	// ◻⬒
 	// ◻◻
 	if (dir_index == down) {
-		return [road.bbox_right - LANE_OFFSET, road.bbox_top];
+		return yMap[top, right];
 	}
 }
+
+
 
 /**
 // solve x
