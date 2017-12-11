@@ -15,3 +15,7 @@ initial_duration = room_speed*irandom(4)+1;
 
 initialized = false;
 y_flip = 1;
+
+if (side == noone) {
+	set_lane_side();
+}

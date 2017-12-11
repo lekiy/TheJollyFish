@@ -6,7 +6,7 @@ height = camera_get_view_height(view_camera[0]);
 
 shake_magnitude = 0;
 shake_duration = 0;
-shake_damping = 0.98;
+shake_damping = 0.8;
 shake_screen = false;
 
 if(room == r_menu){

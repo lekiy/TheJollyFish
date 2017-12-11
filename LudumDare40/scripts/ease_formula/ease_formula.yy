@@ -1,8 +1,8 @@
 {
-    "id": "07f7c98f-d3f0-4a26-810a-9c35388d4d7d",
+    "id": "7a43ad7d-df7d-49e2-bd55-58d7bfc6eb86",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "get_road_edge",
+    "name": "ease_formula",
     "IsCompatibility": false,
     "IsDnD": false
 }

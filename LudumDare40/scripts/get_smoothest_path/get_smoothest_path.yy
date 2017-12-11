@@ -1,8 +1,8 @@
 {
-    "id": "07f7c98f-d3f0-4a26-810a-9c35388d4d7d",
+    "id": "30443df5-ffd9-4ab9-80db-e6d2a78a3244",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "get_road_edge",
+    "name": "get_smoothest_path",
     "IsCompatibility": false,
     "IsDnD": false
 }

@@ -11,6 +11,7 @@ var path = argument0;
 var x1 = argument1;
 var y1 = argument2;
 
+
 var x2 = noone;
 var y2 = noone;
 
@@ -25,13 +26,16 @@ var dir_end = argument6;
 
 var SMOOTH_OFFSET = 5;
 
-
 // Defaulting values
 x2 = x1;
 y2 = y1
 
 x3 = x4;
 y3 = y4;
+
+// Start Point
+path_add_point(path, x1, y1, 100);
+
 
 // Start point smoothing
 switch(dir_start) {
@@ -43,6 +47,14 @@ switch(dir_start) {
 		y2 = y1 - SMOOTH_OFFSET; break;
 	case down:
 		y2 = y1 + SMOOTH_OFFSET; break;
+}
+path_add_point(path, x2, y2, 100);
+
+// Apex
+var apex = get_road_apex(x1, y1, x4, y4, dir_start, dir_end);
+path_add_point(path, apex[0], apex[1], 100);
+if (dir_start != dir_end) {
+	path_add_point(path, apex[0], apex[1], 100);
 }
 
 // End point smoothing
@@ -56,52 +68,12 @@ switch(dir_end) {
 	case down:
 		y3 = y4 - SMOOTH_OFFSET; break;
 }
-
-
-path_add_point(path, x1, y1, 100);
-path_add_point(path, x2, y2, 100);
-
-
-// Midpoint
-var xmid2 = (x2 + x3)/2;
-var ymid2 = (y2 + y3)/2;
-
-var xmid1 = xmid2;
-var ymid1 = ymid2;
-
-// End point smoothing
-switch(dir_end) {
-	case right:
-		xmid1 = xmid2 - SMOOTH_OFFSET; break;
-	case left:
-		xmid1 = xmid2 + SMOOTH_OFFSET; break;
-	case up:
-		ymid1 = ymid2 + SMOOTH_OFFSET; break;
-	case down:
-		ymid1 = ymid2 - SMOOTH_OFFSET; break;
-}
-
-//var xmid3 = xmid2;
-//var ymid3 = ymid2;
-
-// Start point smoothing
-/* switch(dir_start) {
-	case right:
-		xmid3 = xmid2 + SMOOTH_OFFSET; break;
-	case left:
-		xmid3 = xmid2 - SMOOTH_OFFSET; break;
-	case up:
-		ymid3 = ymid2 - SMOOTH_OFFSET; break;
-	case down:
-		ymid3 = ymid2 + SMOOTH_OFFSET; break;
-} */
-
-
-path_add_point(path, xmid1, ymid1, 100);
-//path_add_point(path, xmid2, ymid2, 100);
-//path_add_point(path, xmid3, ymid3, 100);
-//path_add_point(path, , (y2 + y3)/2, 100);
 path_add_point(path, x3, y3, 100);
+
+// End Point
 path_add_point(path, x4, y4, 100);
+
+path_set_closed(path, false);
+path_set_kind(path, 1);
 
 return path;
