@@ -1331,6 +1331,44 @@
             }
         },
         {
+            "Key": "936804e5-b361-4357-b761-2b48cd32b104",
+            "Value": {
+                "id": "63c03dac-6f2a-48d5-96fe-fd2ccb9498bf",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/get_road_edge_from_direction\/get_road_edge_from_direction.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "93aa3abc-e2d3-460a-98cb-e79f19ea945c",
+            "Value": {
+                "id": "75a5d038-15c3-4931-a021-cba695a64b93",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/get_road_edge_from_direction1\/get_road_edge_from_direction1.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "969016f6-0765-455c-b877-9c20c5f677b4",
             "Value": {
                 "id": "6c4617b5-b912-45df-a0e8-810c545afbee",
@@ -1575,25 +1613,6 @@
                 ],
                 "resourcePath": "views\/ae37e79e-3526-47a4-900a-b0bbd1205ca3.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "b1eff8f3-af6c-499d-a4b7-24cfbdc8348a",
-            "Value": {
-                "id": "a609fc58-a874-49f4-b432-93e8e5ac44bf",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "rooms\/r_lvl_2\/r_lvl_2.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
